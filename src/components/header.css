@@ -1,0 +1,67 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--header-background);
+  padding: 0.5rem 1rem;
+}
+
+.navbar {
+  margin-inline-end: auto;
+}
+
+.navbar,
+.books-state {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.unordered-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.app-brand {
+  margin-inline-end: 1rem;
+}
+
+.app-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 2.5rem;
+}
+
+.nav-item:not(:first-child) {
+  margin-inline-start: 0.25rem;
+}
+
+.nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  padding: 0.6875rem 1.5rem;
+  border-style: solid;
+  border-width: 0rem;
+  border-radius: 0.5rem;
+  line-height: 1rem;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+
+.nav-link.active {
+  color: var(--nav-link-active-color);
+  background-color: var(--nav-link-active-background);
+}
+
+.nav-link:hover {
+  color: var(--nav-link-active-color);
+  background-color: var(--nav-link-active-background);
+}
