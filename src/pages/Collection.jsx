@@ -6,7 +6,6 @@ import "./collection.css";
 
 const Collection = () => {
   const { books } = useContext(BookContext);
-  console.log(books.length);
 
   return (
     <>

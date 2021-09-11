@@ -6,7 +6,6 @@ import BookCard from "../components/BookCard";
 const ToRead = () => {
   const { books } = useContext(BookContext);
   const booksToRead = books.filter((book) => book.toRead === true);
-
   return (
     <>
       <PageHeader
@@ -18,7 +17,7 @@ const ToRead = () => {
       <div className="collection">
         {books.map((book) => {
           if (book.toRead === true) {
-            <BookCard key={book.id} book={book} />;
+            return <BookCard key={book.id} book={book} />;
           }
         })}
       </div>

@@ -23,7 +23,8 @@
   padding: 0;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
+  margin: 0;
 }
 
 .app-brand {
@@ -54,6 +55,9 @@
   line-height: 1rem;
   font-weight: bold;
   transition: all 0.2s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link.active {
@@ -64,4 +68,47 @@
 .nav-link:hover {
   color: var(--nav-link-active-color);
   background-color: var(--nav-link-active-background);
+}
+
+.badge {
+  font-size: 0.875rem;
+  margin-inline-start: 0.5rem;
+  color: var(--nav-link-active-background);
+  background-color: var(--nav-link-active-color);
+  border-radius: 0.5rem;
+  padding: 0.25em 0.5em;
+}
+
+.theme-state-select {
+  width: 14rem;
+  height: 2.75rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+
+  background-image: url("../img/baseline_expand_more_white_24dp.png");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 24px 24px;
+
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  color: var(--select-color);
+  background-color: var(--select-background);
+  border: 1px solid var(--select-border);
+}
+
+.theme-state-select:focus {
+  border-color: var(--select-focus-border);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--select-focus-shadow);
 }
